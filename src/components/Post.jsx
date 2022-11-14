@@ -1,4 +1,5 @@
 import { Comment } from "./Comment.jsx";
+import { Avatar } from "./Avatar.jsx";
 import styles from "./Post.module.css";
 
 export const Post = () => {
@@ -6,15 +7,14 @@ export const Post = () => {
     <article className={styles.post}>
       <header>
         <div className={styles.author}>
-          <img
-            className={styles.avatar}
-            src="https://avatars.githubusercontent.com/u/100380431?s=96&v=4"
-          />
+          <Avatar src="https://avatars.githubusercontent.com/u/100380431?s=96&v=4" />
+
           <div className={styles.authorInfo}>
             <strong>Bruna Flôr</strong>
             <span>Web Developer</span>
           </div>
         </div>
+
         <time title="11 de maio às 08:13h" dateTime="2022-05-11 08:00:51">
           Publicado a 1h
         </time>
