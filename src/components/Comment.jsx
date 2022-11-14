@@ -1,7 +1,7 @@
-import { ThumbsUp, TrashSimple } from "phosphor-react";
+import { ThumbsUp, Trash } from "phosphor-react";
 import styles from "./Comment.module.css";
 
-export const comment = () => {
+export const Comment = () => {
   return (
     <div className={styles.comment}>
       <img src="https://github.com/diego3g.png" />
@@ -15,13 +15,12 @@ export const comment = () => {
               </time>{" "}
             </div>
             <button title="Deletar comentário">
-              <TrashSimple size={20} />
+              <Trash size={24} />
             </button>
           </header>
           <p>Muito bom! Parabéns</p>
         </div>
         <footer>
-          Aplaudir{" "}
           <button>
             <ThumbsUp />
             Aplaudir <span>20</span>
