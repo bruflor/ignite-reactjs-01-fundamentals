@@ -1,14 +1,24 @@
 import styles from "./Sidebar.module.css"
+import { PencilLine } from "phosphor-react"
 
 export const Sidebar=() => {
     return (
         <aside className={styles.sidebar}>
-            <img className={styles.cover} src="https://images.unsplash.com/photo-1502134249126-9f3755a50d78?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=50"  />
+
+            <img className={styles.cover} src="https://images.unsplash.com/photo-1464802686167-b939a6910659?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=50"  />
+
             <div className={styles.profile}>
-                <strong>Lara Alves</strong>
-                <span>Web Developer</span>
+               <img className={styles.avatar} src="https://avatars.githubusercontent.com/u/100380431?s=96&v=4"  />
+               <strong>Bruna Flôr</strong>
+               <span>Web Developer</span>
             </div>
-            <footer><a href="#">Editar seu perfil</a></footer>
+
+            <footer>
+                <a href="#">
+                <PencilLine size={20}/>
+                Editar seu perfil
+                </a>
+            </footer>
         </aside>
     )
 }
